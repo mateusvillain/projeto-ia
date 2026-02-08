@@ -1,0 +1,63 @@
+:root {
+  /* ===========================
+    COLOR VARIABLES
+    =========================== */
+
+  /* Background Colors */
+  --color-background-page: white;
+  --color-background-container: #f0f0f3;
+
+  /* Content/Text Colors */
+  --color-content-title: #1c2024;
+  --color-content-body: #60646c;
+  --color-content-placeholder: #b9bbc6;
+
+  /* State Colors */
+  --color-state-hover: rgba(0, 0, 0, 0.08);
+  --color-state-pressed: rgba(0, 0, 0, 0.16);
+
+  /* Border Colors */
+  --color-border-neutral: #e0e1e6;
+
+  /* ===========================
+    SPACING VARIABLES
+    =========================== */
+
+  --spacing-0: 0;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+
+  /* ===========================
+    BORDER VARIABLES
+    =========================== */
+
+  --border-width-smooth: 1px;
+  --border-radius-small: 4px;
+  --border-radius-pill: 99999px;
+
+  /* ===========================
+    TYPOGRAPHY VARIABLES
+    =========================== */
+
+  /* Font Family */
+  --text-font-family: 'Inter', sans-serif;
+
+  /* Font Weights */
+  --text-weight-regular: 400;
+  --text-weight-medium: 500;
+  --text-weight-bold: 700;
+
+  /* Font Sizes */
+  --text-size-title: 32px;
+  --text-size-body: 16px;
+
+  /* Line Heights */
+  --text-line-height-title: 44px;
+  --text-line-height-body: 24px;
+}
