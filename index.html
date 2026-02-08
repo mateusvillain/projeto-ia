@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto IA - Chat com IA</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="components.css">
+
+  <!-- Font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--text-font-family);
+      background-color: var(--color-background-page);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .chat-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .chat-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-32);
+      background-color: var(--color-background-page);
+    }
+
+    .chat-welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-24);
+      width: 100%;
+      max-width: 475px;
+    }
+
+    .chat-title {
+      font-size: var(--text-size-title);
+      font-weight: var(--text-weight-bold);
+      line-height: var(--text-line-height-title);
+      color: var(--color-content-title);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Navbar Component -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <!-- Logo Section -->
+        <div class="navbar__icon-section">
+          <div class="navbar__icon">
+            <img src="img/chat.svg" alt="Logo" class="navbar__icon">
+          </div>
+        </div>
+
+        <!-- Menu Section 1 -->
+        <div class="navbar__menu">
+          <div class="navbar__menu-heading">Principal</div>
+
+          <button class="navbar__menu-item">
+            <img src="img/edit.svg" alt="Nova conversa" class="navbar__menu-item-icon">
+            <span class="navbar__menu-item-text">Nova conversa</span>
+          </button>
+
+          <button class="navbar__menu-item">
+            <img src="img/apps.svg" alt="Aplicativos" class="navbar__menu-item-icon">
+            <span class="navbar__menu-item-text">Aplicativos</span>
+          </button>
+
+          <button class="navbar__menu-item">
+            <img src="img/search.svg" alt="Busca" class="navbar__menu-item-icon">
+            <span class="navbar__menu-item-text">Busca</span>
+          </button>
+        </div>
+
+        <!-- Menu Section 2 -->
+        <div class="navbar__menu">
+          <div class="navbar__menu-heading">Conversas</div>
+
+          <button class="navbar__menu-item">
+            <span class="navbar__menu-item-text">Design System</span>
+          </button>
+
+          <button class="navbar__menu-item">
+            <span class="navbar__menu-item-text">User Interface</span>
+          </button>
+
+          <button class="navbar__menu-item">
+            <span class="navbar__menu-item-text">Inteligência Artificial</span>
+          </button>
+
+          <button class="navbar__menu-item">
+            <span class="navbar__menu-item-text">Cursos da Alura</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <button class="navbar__footer">
+        <img src="img/settings.svg" alt="Configurações" class="navbar__footer-icon">
+        <span class="navbar__footer-text">Configurações</span>
+      </button>
+    </nav>
+
+    <!-- Main Chat Content -->
+    <div class="chat-content">
+      <div class="chat-welcome">
+        <h1 class="chat-title">Por onde começamos?</h1>
+        
+        <div class="text-field">
+          <div class="text-field__icon-left">
+            <img src="img/microphone.svg" alt="Microfone" />
+          </div>
+          <input type="text" class="text-field__input" placeholder="Envie sua mensagem" />
+          <div class="text-field__icons-right">
+            <button class="text-field__icon-right" title="Anexar arquivo">
+              <img src="img/edit.svg" alt="Anexar" />
+            </button>
+            <button class="text-field__icon-right" title="Enviar mensagem">
+              <img src="img/send.svg" alt="Enviar" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
